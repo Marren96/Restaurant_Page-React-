@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* The navigation Component Styling */
+.nav-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+ 
+}
+.logo-container h1{
+  color: indigo;
+  font-size: 900;
+  font-weight: bolder;
+}
+.route-container {
+  display: flex;
+}
+.route-container .route2{
+  border: none;
+}
+.route-container .route1{
+  border: 1px solid white;
+  outline: none;
+  text-align: center;
+  background-color: none;
+  width: 70px;
+  height: 25px;
+  transition: all .5s ease;
+}
+.route-container .route1:hover{
+  text-decoration-color: black;
+  background-color: white;
+}
+
+.route-container div{
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.route-container div a{
+  text-decoration: none;
+  font-size: 20px;
+  color:black;
+  font-style: normal;
+}
+
+.route-container div a:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* The home page styling*/
+.home-container {
+  background-image: url('https://lh3.googleusercontent.com/proxy/xmzG6q47CXHcKhYPE1xiaGU-RvGR-I78PMUTKITno4hRBKF8UBqOHeXnl2yj2dg4mUjJ1KRueHSnfigFuBU5DIqDXU_-VwoZy3gd7KxcCyB5re9z2tXvmb0H71F-uB0RXzbzve7AZTD0SOc');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 630px;
+  margin-top: px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-container button:hover{
+  background-color: darkolivegreen;
 }
